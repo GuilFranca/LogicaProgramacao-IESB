@@ -1,0 +1,65 @@
+﻿Aula 01
+Descrição Narrativa
+
+
+1 - Escreva um algoritmo que leia dois números informados pelo usuário e exiba a soma entre eles.
+1° Pegue o valor do primeiro número;
+2° Pegue o valor do segundo número;
+3° Some os valores dos dois números;
+4° Mostra o valor da soma dos dois valores inseridos.
+
+
+2 - Escreva um algoritmo que leia um número informados pelo usuário e exiba se ele é par ou ímpar.
+1° Pegar o valor do número;
+2° Conferir de ele é divisível por 2;
+3° Se não for divisível por 2, o número será ímpar;
+4° Se for divisível por 2, então o número será par.
+
+
+3 - Escreva um algoritmo que leia três números e exiba o maior entre eles.
+1° Pegar os três valores;
+2° Comparar cada um dos números entre si;
+3° Mostrar qual é o maior entre os três.
+
+
+
+
+
+
+4 - Escreva um algoritmo que receba um número introduzido pelo usuário exiba ao usuário se é positivo, negativo ou zero.
+1° Insira o valor do número;
+2° Verifique se o número inserido é maior que zero;
+3° Se for maior que zero o número é positivo;
+4° Verifica se o número é igual a zero;
+5° Se o número for igual a zero, ele é zero.
+6° Verifique se o número inserido é menor que zero;
+7° Se for menor que zero o número é negativo.
+
+
+5 - Escreva um algoritmo que receba dois números informados pelo usuário e exiba o cálculo da distância entre eles.
+1° Insira os valores das distâncias;
+2° subtraia os valores entre si para descobrir a distância entre elas;
+3° Mostre o valor da distância.
+
+
+6 - Escreva um algoritmo que leia três números, a base maior, a base menor e a altura de um trapézio. Por fim, exiba o cálculo da área desse trapézio.
+1° Receberá os valores da base maior, base menor e altura;
+2° Irá somar a base maior com a base menor;
+3° Pegará a soma anterior e multiplicará pelo valor da altura;
+4° Então dividira o resultado anterior por 2.
+
+
+7 - Escreva um algoritmo que receba e leia do usuário um número que representará o raio de um círculo. Exiba ao usuário o resultado da área e do perímetro desse círculo. Considere π = 3,1416.
+1° O usuário irá inserir o valor do raio de um círculo;
+2° Com esse valor o código irá calcular o valor da área do círculo;
+3° Irá multiplicar o valor de π com raio elevado a segunda potência;
+4° Então mostrará o a Área do círculo;
+5° Irá multiplicar o valor de π por 2 e então pegará o resultado e multiplicará pelo raio do círculo;
+6° Então pegará o valor anterior e mostrará para o usuário o valor do perímetro do círculo.
+
+
+8. Escreva um algoritmo que leia do usuário dois números, o raio e a altura de um cilindro. Em seguida, exiba o cálculo do volume desse cilindro.
+1° O usuário irá inserir o raio e a altura de um cilindro;
+2° Para determinar o volume do cilindro será feito a multiplicação de π por raio elevado a segunda potência;
+3° Pega o valor do cálculo anterior e multiplica pela altura;
+4° Mostre o valor do volume para o usuário.
