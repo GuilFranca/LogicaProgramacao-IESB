@@ -1,0 +1,174 @@
+//exe_01
+
+var numero1 = 100;
+var numero2 = 100;
+var numero3 = 100;
+var media = (numero1 + numero2 + numero3) / 3;
+
+console.log('número1 =',numero1);
+console.log('número2 =',numero2);
+console.log('número3 =',numero3);
+
+if ((numero1 > 100 || numero1 < 0) || (numero2 > 100 || numero2 < 0) || (numero3 > 100 || numero3 < 0)) {
+    console.log('Alugum dos valores informados é menor que 0 ou maior que 100, altere os valores para o programa funcionar');
+} else {
+    console.log(`A média aritmética dos números ${numero1}, ${numero2}, ${numero3} é = ${media}`);
+}
+
+//exe_02
+
+// Para instalar o prompt no node: npm install prompt-sync
+// Para declarar o prompt: const prompt = require('prompt-sync')({sigint: true});
+
+const prompt = require('prompt-sync')({sigint: true});
+
+var numero1 = parseFloat(prompt('Digite o valor do primeiro número: '));
+var numero2 = parseFloat(prompt('Digite o valor do segundo número: '));
+var numero3 = parseFloat(prompt('Digite o valor do terceiro número: '));
+
+var media = (numero1 + numero2 + numero3) / 3;
+
+if ((numero1 > 100 || numero1 < 0) || (numero2 > 100 || numero2 < 0) || (numero3 > 100 || numero3 < 0)) {
+    console.log('Alugum dos valores informados é menor que 0 ou maior que 100, altere os valores para o programa funcionar');
+} else {
+    console.log(`A média aritmética dos números ${numero1}, ${numero2}, ${numero3} é = ${media}`);
+}
+
+//exe_03
+
+const prompt = require('prompt-sync')({sigint: true});
+
+var n1 = parseFloat(prompt('Digite o valor da n1: '));
+var n2 = parseFloat(prompt('Digite o valor da n2: '));
+var n3 = parseFloat(prompt('Digite o valor da n3: '));
+
+var p1 = 0.2;
+var p2 = 0.3;
+var p3 = 0.5;
+
+var mediaPonderada = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / (p1 + p2 + p3);
+
+if (n1,n2,n3 < 0 || n1,n2,n3 > 10) {
+    console.log('Algum valor inserido menor que 0 ou maior que 10');
+} else {
+    console.log(`n1 = ${n1}, n2 = ${n2}, n3 = ${n3} \n média ponderada = ${mediaPonderada}`);
+}
+
+//exe_04
+
+const prompt = require('prompt-sync')({sigint: true});
+
+var numero = parseInt(prompt('Digite um número inteiro: '));
+
+if (numero % 2 === 0) {
+    console.log(`O ${numero} é par`);
+} else {
+    console.log(`O ${numero} é impar`);
+}
+
+//exe_05
+
+const prompt = require('prompt-sync')({ sigint: true });
+
+let corSemaforo = '';
+
+while ((corSemaforo != 'vermelho') && (corSemaforo != 'amarelo') && (corSemaforo != 'verde')) {
+    corSemaforo = prompt("Qual a cor do semáforo? ").toLowerCase();
+
+    if (corSemaforo === 'vermelho') {
+        console.log("PARE!");
+    } else if (corSemaforo === 'amarelo') {
+        console.log("Atenção!");
+    } else if (corSemaforo === 'verde') {
+        console.log('siga...');
+    } else {
+        console.log("Valor incorreto, digit novamente.");
+    }
+}
+
+//exe_06
+
+const prompt = require('prompt-sync')({sigint: true});
+
+let num = parseFloat(prompt("Digite um número real positivo: "));
+
+num = parseInt(num);
+
+let numMultiplo3 = (num % 3 === 0) ? `O ${num} é multilo de 3` : `O ${num} não é multiplo de 3`;
+
+console.log(numMultiplo3);
+
+//exe_07
+
+const prompt = require('prompt-sync')({sigint: true});
+
+let listaAnoCopa = [];
+
+for (let i = 1966; i < 2025; i = i + 4){
+    listaAnoCopa.push(i);
+}
+
+console.log(listaAnoCopa);
+
+let ano = parseInt(prompt('Digite um ano entre 1970 e 2025: '));
+
+console.log(listaAnoCopa.includes(ano));
+
+if ((ano > 2025) || (ano < 1970)) {
+    console.log('O ano inserido é invalido.')
+} else {
+    if (listaAnoCopa.includes(ano)) {
+        console.log(`O ano ${ano} foi um ano de copa do mundo`)
+    } else {
+        console.log(`Este ano de ${ano} não teve copa`);
+    }
+}
+
+//exe_08 
+
+const prompt = require('prompt-sync')({sigint: true});
+
+let listaAnoOlimpiadas = [];
+
+for (let i = 1976; i < 2025; i = i + 4) {
+    listaAnoOlimpiadas.push(i);
+}
+
+console.log(listaAnoOlimpiadas);
+
+let ano = parseInt(prompt('Digite um ano entre 1980 e 2025: '));
+
+if ((ano > 2025) || (ano < 1980)) {
+   console.log('Ano invalido'); 
+} else {
+    if (listaAnoOlimpiadas.includes(ano)) {
+        console.log(`O ano de ${ano} teve olimpiadas`);
+    } else {
+        console.log(`O ano de ${ano} não teve olimpiadas`);
+    }
+}
+
+//exe_09
+
+const prompt = require('prompt-sync')({sigint: true});
+
+let n1 = parseFloat(prompt('DIgite a nota n1: '));
+let n2 = parseFloat(prompt('DIgite a nota n2: '));
+let n3 = parseFloat(prompt('DIgite a nota n3: '));
+
+let mediaPeso = ((n1 * 3) + (n2 * 3) + (n3 * 4)) / (3 + 3 + 4); 
+
+console.log(mediaPeso);
+
+// 10) Formule um problema, daí resolva-o com um programa JS.
+// Código para venda de bebidas para maiores de idade.
+
+const prompt = require('prompt-sync')({sigint: true});
+
+let idade = parseInt(prompt('Qual a sua idade? '));
+ 
+if (idade >= 18) {
+    console.log('Pode pegar bebida alcoólica');
+} else {
+    console.log('Você não pode pegar bebida alcoólica, por ser menor de idade');
+}
