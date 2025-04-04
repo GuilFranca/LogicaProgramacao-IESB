@@ -29,3 +29,4 @@ for (let ano = 2025; ano <= 2500; ano++) {
         console.log(`O ${ano} é bissexto`);
     }
 }
+
