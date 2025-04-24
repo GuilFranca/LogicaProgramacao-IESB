@@ -17,14 +17,19 @@
 const prompt = require('prompt-sync')({sigint: true});
 
 var numeroPremiado = parseInt(Math.random() * 100 + 1);
+var numeroPremiado2 = parseInt(Math.random() * 100 + 1);
+var numeroPremiado3 = parseInt(Math.random() * 100 + 1);
+
 console.log(numeroPremiado);
+console.log(numeroPremiado2);
+console.log(numeroPremiado3);
 
 console.log('Jogo do número premiado\nVocê tem 3 chances para acertar\n\n');
 
 var chances = 3;
 var chute;
 
-while (chances > 0 && chute != numeroPremiado) {
+while (chances > 0 && (chute != numeroPremiado && chute != numeroPremiado2 && chute != numeroPremiado3)) {
     console.log(`-=-=-=-=-=-=-=-=-\nChances = ${chances}`)
     chute = prompt('Qual o número premiado? ');
     chances--
@@ -33,7 +38,7 @@ while (chances > 0 && chute != numeroPremiado) {
 console.log('-=-=-=-=-=-=-=-=-');
 
 if (chances === 0 && chute != numeroPremiado) {
-    console.log(`\n\nVocê perdeu :(\nO número premiado era ${numeroPremiado}`);
+    console.log(`\n\nVocê perdeu :(\nOs números premiados eram ${numeroPremiado}, ${numeroPremiado2}, ${numeroPremiado3}`);
 } else {
-    console.log(`\n\nVocê acertou o número premiado é ${numeroPremiado}`);
+    console.log(`\n\nVocê acertou os números premiados são ${numeroPremiado}, ${numeroPremiado2}, ${numeroPremiado3}`);
 }
