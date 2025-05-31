@@ -1,17 +1,104 @@
-// Nome:   Matrícula:
+//Nome: Guilherme França Fernandes   Matrícula: 25114290007
+
+
+
 //1. Crie uma função em JS que retorne a área de um trapézio,
-// cuja altura mede h e cujas bases medem B e b.
-// At= (B+b)*h/2
+//cuja altura mede h e cujas bases medem B e b.
+//At= (B+b)*h/2
+const prompt = require('prompt-sync')({signint: true});
+
+function calculoTrapezio(altura, baseMaior, baseMenor) {
+
+    let area = ((baseMaior + baseMenor) * altura) / 2;
+
+    return area;
+
+}
+
+console.log('=-=-Área trapézio-=-=');
+let altura = parseFloat(prompt('Digite o valor da altura: '));
+let baseMaior = parseFloat(prompt('Digite o valor da base maior: '));
+let baseMenor = parseFloat(prompt('Digite o valor da base menor: '));
+
+console.log(calculoTrapezio(altura,baseMaior, baseMenor));
+
+
 
 //2. Crie uma função que dadas as dimensões de um paralelogramo
-// retorne o seu perímetro
+//retorne o seu perímetro
+const prompt = require('prompt-sync')({sigint: true});
+
+function perimetroParalelogramo(altura, base) {
+
+    let perimetro = (altura + base) * 2;
+
+    return perimetro;
+
+}
+
+let altura = parseFloat(prompt('Digite o valor da altura: '));
+let base = parseFloat(prompt('Digite o valor da base: '));
+
+console.log(perimetroParalelogramo(altura, base));
+
+
 
 //3. Crie uma função que armazene em um array todos números ímpares
-// entre dois números dados, inclusive. Contudo, o array não
+//entre dois números dados, inclusive. Contudo, o array não
 //deve incluir números múltiplos de 7;
+const prompt = require('prompt-sync')({ sigint: true});
+
+function listaImparMenosMultiplosSete(numInicial, numFinal) {
+
+    ArrayImparMenosMultiplosSete = [];
+
+    for (let i = numInicial; i < numFinal; i++) {
+
+        if (i % 2 != 0) {
+
+            if (i % 7 != 0) {
+
+                ArrayImparMenosMultiplosSete.push(i);
+
+            }
+
+        }
+
+    }
+
+    return ArrayImparMenosMultiplosSete;
+
+}
+
+let numInicial = parseFloat(prompt('Digite o número inicial: '));
+let numFinal = parseFloat(prompt('Digite o número final: '));
+
+console.log(listaImparMenosMultiplosSete(numInicial, numFinal));
+
+
 
 //4. Crie uma função que retorne a mensagem "A vida é bela!"
+function vida() {
 
-// 5. Crie uma função que o usuário entra com um número inteiro.
-// Se o número entrado for par, retorne a mensagem "Número (Tal) é par",
-// caso contrário, retorne "Número (Tal) é ímpar";
+    console.log('A vida é bela!');
+
+}
+
+vida();
+
+
+
+//5. Crie uma função que o usuário entra com um número inteiro.
+//Se o número entrado for par, retorne a mensagem "Número (Tal) é par",
+//caso contrário, retorne "Número (Tal) é ímpar";
+const prompt = require('prompt-sync')({sigint: true})
+
+function paridade(numero) {
+
+    numero % 2 === 0 ? console.log(`O número ${numero} é par`) : console.log(`O número ${numero} é impar`);
+
+}
+
+let numero = parseInt(prompt('Digite um número inteiro: '));
+
+paridade(numero);
