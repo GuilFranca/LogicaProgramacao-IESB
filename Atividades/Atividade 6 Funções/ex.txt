@@ -1,0 +1,17 @@
+// Nome:   Matrícula:
+//1. Crie uma função em JS que retorne a área de um trapézio,
+// cuja altura mede h e cujas bases medem B e b.
+// At= (B+b)*h/2
+
+//2. Crie uma função que dadas as dimensões de um paralelogramo
+// retorne o seu perímetro
+
+//3. Crie uma função que armazene em um array todos números ímpares
+// entre dois números dados, inclusive. Contudo, o array não
+//deve incluir números múltiplos de 7;
+
+//4. Crie uma função que retorne a mensagem "A vida é bela!"
+
+// 5. Crie uma função que o usuário entra com um número inteiro.
+// Se o número entrado for par, retorne a mensagem "Número (Tal) é par",
+// caso contrário, retorne "Número (Tal) é ímpar";
