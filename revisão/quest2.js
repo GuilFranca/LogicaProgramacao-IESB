@@ -62,3 +62,6 @@ console.log(`Saldo inicial da Nubank: R$${nubank.getSaldo()}`);
 const inter = new ContaNome(5000, 'Guilherme')
 
 console.log(`Saldo inicial de ${inter.getNome()} Nubank: R$${inter.getSaldo()}`);
+
+// Não é possível acessar o nome 
+console.log(inter.nome)
