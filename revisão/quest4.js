@@ -11,3 +11,11 @@ function double(array) {
 // console.log(cube(listaNum));
 
 console.log(double(listaNum));
+
+const idades = [16, 21, 17, 30, 15, 25];
+
+const maioresDeIdade = idades.filter(function(idade) {
+    return idade >= 18;
+});
+
+const maioresDeIdadeArrow = idades.filter(idade => idade >= 18);
